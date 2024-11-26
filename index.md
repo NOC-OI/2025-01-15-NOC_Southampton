@@ -257,6 +257,11 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
+<p id="course-notes">
+  <strong>Course Notes:</strong>
+  To learn more about what will be covered during this workshop, please refer to <a href="{{site.incubator_lesson_site}}">the lesson homepage</a>.
+</p>
+
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
