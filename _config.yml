@@ -60,7 +60,7 @@ title: "Intermediate Research Software Development Skills (Python)"
 # in The Carpentries Incubator).
 #
 # For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-incubator_lesson_site: https://github.com/carpentries-incubator/python-intermediate-development
+incubator_lesson_site: https://carpentries-incubator.github.io/python-intermediate-development/
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
 # incubator_pre_survey: "put the URL of your pre-workshop survey here"
