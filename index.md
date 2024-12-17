@@ -66,7 +66,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
+  registration box below, please go directly to the <a href="https://2025-01-15-intermediate-software-dev.eventbrite.com">registration page.</a></strong>
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
@@ -81,12 +81,17 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <p id="what">
   <strong>About this workshop:</strong>
-  This course is intended for people who have developed basic skills in Python programming and practised these over at least a few months and now want to move to the next step in software development. This course teaches some intermediate software engineering skills and best practices to help you restructure existing code and design more robust, reusable and maintainable code, automate the process of testing and verifying software correctness and support collaborations with others in a way that mimics a typical software development process within a team.
+  This course is intended for people who have developed basic skills in Python programming. You are expected to have practised these over at least a few months and now want to move to the next step in software development. This course teaches some intermediate software engineering skills and best practices to help you restructure existing code and design more robust, reusable and maintainable code, automate the process of testing and verifying software correctness and support collaborations across teams.
 </p>
 
 <p id="course-notes">
   <strong>Course Notes:</strong>
   The course notes can be found on <a href="{{site.incubator_lesson_site}}">the lesson homepage</a>.
+</p>
+
+<p id="who-can-attend">
+    <strong>Who can attend?:</strong>
+    This workshop is open to all staff and students from the National Oceanography Centre. Limited numbers are available for other organisations who collaborate with the National Oceanography Centre.
 </p>
 
 {% comment %}
@@ -145,21 +150,9 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
-{% comment %}
-SPECIAL REQUIREMENTS
-
-Modify the block below if there are any special requirements.
-{% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong>
-  {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+    Participants must bring a laptop which can connect to the Eduroam or NOCstaff wifi. All attendees will receive an account on the NOC Data Science Platform where all required software will be pre-installed. Anybody wishing to install the software on their laptop should follow the setup instructions <a href="#setup">below</a>.
 </p>
 
 {% comment %}
@@ -185,11 +178,6 @@ Display the contact email address set in the configuration file.
   to-be-announced
   {% endif %}
   for more information.
-</p>
-
-<p id="who-can-attend">
-    <strong>Who can attend?:</strong>
-    This workshop is open to all staff and students from the National Oceanography Centre. Limited numbers are available for other organisations who collaborate with the National Oceanography Centre.
 </p>
 
 <p id="roles">
