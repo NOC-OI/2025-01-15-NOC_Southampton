@@ -79,50 +79,15 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-
-<p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
-<p align="center">
-  <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
-  </em>
+<p id="what">
+  <strong>About this workshop:</strong>
+  This course is intended for people who have developed basic skills in Python programming and practised these over at least a few months and now want to move to the next step in software development. This course teaches some intermediate software engineering skills and best practices to help you restructure existing code and design more robust, reusable and maintainable code, automate the process of testing and verifying software correctness and support collaborations with others in a way that mimics a typical software development process within a team.
 </p>
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
 
-{% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
-{% endif %}
-
-{% comment %}
-AUDIENCE
-
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
+<p id="course-notes">
+  <strong>Course Notes:</strong>
+  The course notes can be found on <a href="{{site.incubator_lesson_site}}">the lesson homepage</a>.
+</p>
 
 {% comment %}
 LOCATION
@@ -198,33 +163,6 @@ Modify the block below if there are any special requirements.
 </p>
 
 {% comment %}
-ACCESSIBILITY
-
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
-  We are committed to making this workshop
-  accessible to everybody. 
-</p>
-<p>We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
-</p>
-<p>
-  <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary 
-  for computing and data science terms. The glossary helps 
-  learners attend workshops and use our lessons to make sense of computational and programming jargon written in English by offering it 
-  in their native language. Translating data science terms also provides a teaching tool for Carpentries Instructors to reduce barriers 
-  for their learners.
-</p>
-
-{% comment %}
 CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
@@ -249,9 +187,9 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
-<p id="course-notes">
-  <strong>Course Notes:</strong>
-  To learn more about what will be covered during this workshop, please refer to <a href="{{site.incubator_lesson_site}}">the lesson homepage</a>.
+<p id="who-can-attend">
+    <strong>Who can attend?:</strong>
+    This workshop is open to all staff and students from the National Oceanography Centre. Limited numbers are available for other organisations who collaborate with the National Oceanography Centre.
 </p>
 
 <p id="roles">
@@ -260,26 +198,32 @@ Display the contact email address set in the configuration file.
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
 
+<p>
+<strong><a href="https://carpentries.org">About The Carpentries</a></strong> project comprises the <a
+href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
+<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
+helpers, and supporters who share a mission to teach foundational computational and data science
+skills to researchers.</p>
+
 {% comment %}
-WHO CAN ATTEND?
+ACCESSIBILITY
 
-If you would like to specify who can attend the workshop,
-you can use the section below.
-
-Move the 'endcomment' tag above the beginning of the following
-<p> tag to make this section visible.
-
-Edit the text to match who can attend the workshop. For instance:
-- This workshop is open to affiliates to ABC university.
-- This workshop is open to the public.
-- If you are interested in attending this workshop, contact me@example.com
-  for more information
-
-<p id="who-can-attend">
-    <strong>Who can attend?:</strong>
-    This workshop is open to ....
-</p>
+Modify the block below if there are any barriers to accessibility or
+special instructions.
 {% endcomment %}
+<p id="accessibility">
+  <strong>Accessibility:</strong>
+  We are committed to making this workshop
+  accessible to everybody. 
+</p>
+<p>We are dedicated to providing a positive and accessible learning environment for all. 
+  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
+  However, we do want to help create an inclusive, accessible experience for all participants. 
+  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
+  To request an accommodation for this workshop, please fill out the 
+  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
+  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
+</p>
 
 <hr/>
 
