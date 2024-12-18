@@ -69,12 +69,12 @@ displayed if the 'eventbrite' field in the header is not set.
   registration box below, please go directly to the <a href="https://2025-01-15-intermediate-software-dev.eventbrite.com">registration page.</a></strong>
 
 <div id="eventbrite-widget-container"></div>
-<script src="https://www.eventbrite.nl/static/widgets/eb_widgets.js"></script>
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 <script type="text/javascript">
     window.EBWidgets.createWidget({
         // Required
         widgetType: 'checkout',
-        eventId: {{eventbrite}},
+        eventId: {{page.eventbrite}},
         iframeContainerId: 'eventbrite-widget-container',
     });
 </script>
